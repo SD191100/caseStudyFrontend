@@ -5,6 +5,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './screens/login/login.component';
 import { RegisterComponent } from './screens/register/register.component';
 import { HomeComponent } from './screens/home/home.component';
+import { ProductBrowsingComponent } from './screens/product-details/product-details.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { HomeComponent } from './screens/home/home.component';
     //HomeComponent,
     //LoginComponent,
     //RegisterComponent,
+    ProductBrowsingComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

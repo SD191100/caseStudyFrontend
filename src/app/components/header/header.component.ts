@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   buttons = [
   { id: 1, icon: 'assets/fav.svg', link: '/favourites' },
   { id: 2, icon: 'assets/cart.svg', link: '/cart' },
-  { id: 3, icon: 'assets/account.svg', link: '' },
+  { id: 3, icon: 'assets/account.svg', link: '/account' },
 ];
   tokenAvailable: Signal<boolean>;
   constructor(private router: Router, private categoryService: CategoryService) {

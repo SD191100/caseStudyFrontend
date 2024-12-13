@@ -6,13 +6,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  private userApiUrl = 'http://localhost:5087/api/User'; // Replace with your API URL for User
-  private addressApiUrl = 'http://localhost:5087/api/Address'; // Replace with your API URL for Address
+  private userApiUrl = 'https://localhost:7251/api/User'; // Replace with your API URL for User
+  private addressApiUrl = 'https://localhost:7251/api/Address'; // Replace with your API URL for Address
 
   constructor(private http: HttpClient) {}
 
   // Decode JWT token and return decoded object
-
 
   // Get the user profile by ID (from the server)
   getUserProfile(userId: number): Observable<any> {

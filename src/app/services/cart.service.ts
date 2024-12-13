@@ -8,11 +8,11 @@ import { AuthService } from './auth-service.service';
   providedIn: 'root',
 })
 export class CartService {
-  private baseUrl = 'http://localhost:5087/api/cart'; // Update with your API URL
+  private baseUrl = 'https://localhost:7251/api/cart'; // Update with your API URL
   private cartSubject = new BehaviorSubject<Cart | null>(null);
-
+  
   cart$ = this.cartSubject.asObservable();
-
+  
   constructor(
     private http: HttpClient,
     private authService: AuthService,

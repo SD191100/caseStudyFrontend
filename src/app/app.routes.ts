@@ -6,6 +6,7 @@ import { CategoriesComponent } from './screens/categories/categories.component';
 import { ProductsComponent } from './screens/products/products.component';
 import { CartComponent } from './screens/cart/cart.component';
 import { UserProfileComponent } from './screens/user-profile/user-profile.component';
+import { ProductBrowsingComponent } from './screens/product-details/product-details.component';
 
 export const routes: Routes = [
   {
@@ -28,5 +29,6 @@ export const routes: Routes = [
   { path: 'categories/:id/:name', component: CategoriesComponent },
   { path: 'products/:id', component: ProductsComponent },
   { path: 'cart', component: CartComponent },
-  { path: 'account', component: UserProfileComponent}
+  { path: 'account', component: UserProfileComponent},
+  { path: 'productBrowsing' , component: ProductBrowsingComponent}
 ];
